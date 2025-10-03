@@ -6,3 +6,6 @@ def index(request):
 
 def about(request):
   return HttpResponse('My name is Andrew Dinh and I am playing with Django!')
+
+def hello(request, first_name):
+  return HttpResponse(f"Hello {first_name}")
